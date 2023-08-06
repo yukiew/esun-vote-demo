@@ -32,7 +32,6 @@ public class CandidateServiceImpl implements CandidateService {
     @Transactional
     public void voteByCandidates(List<Candidate> candidates, String person) {
         for (Candidate candidate : candidates) {
-            // 更新候选人信息
             candidate.setCount(candidate.getCount()+1);
             candidateDao.update(candidate, person);
             voteRecordsDao.insertVoteRecord(candidate.getId(), person);

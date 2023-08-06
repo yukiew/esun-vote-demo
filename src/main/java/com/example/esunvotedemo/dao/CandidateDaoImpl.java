@@ -57,7 +57,6 @@ public class CandidateDaoImpl implements CandidateDao {
 
         namedParameterJdbcTemplate.update(sqlStr, paramMap);
 
-        // 返回更新後的候選人資訊，你可以根據需要從資料庫中重新讀取資料或直接返回已更新的 candidate 對象。
     }
 
     @Override
