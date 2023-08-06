@@ -1,0 +1,9 @@
+-- auto-generated definition
+create table vote_records
+(
+    id     int auto_increment
+        primary key,
+    person varchar(255) not null,
+    cid    varchar(255) null
+);
+
